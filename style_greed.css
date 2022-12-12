@@ -1,0 +1,527 @@
+body.main{
+    display: grid;
+    grid-template-columns: 1fr 70% 2fr;
+    grid-template-rows: [start] 200px  25fr [footer_start] 1fr [end];
+}
+
+body.auth_body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+body.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+body.gallery #images_gallery_block{
+   align-self: center;
+   justify-self: center;
+}
+
+
+
+#templer{
+    margin-bottom:15%;
+}
+
+#templer_buy{
+    margin-bottom:10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#all_ex_header{
+    grid-column: 1 / span 3;
+    grid-row: 2 / footer_start;
+
+    display: grid;
+    grid-template-columns: inherit;
+    grid-template-rows: [start] 300px 1fr [bottom_text] 100px [end];
+    grid-auto-flow: column;
+    
+}
+
+#horizontal_section_content
+{
+    grid-column: 2 / 4;
+    grid-row: 2 / bottom_text;
+
+    display: grid;
+    grid-template-columns: 70% 40px 1fr;
+}
+
+#content{
+    margin: 50px;
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
+#first_name{
+    margin-top: 50px;
+    grid-column: 2 / 3;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+footer{
+    grid-column: 1 / span 3;
+    grid-row: footer_start / end;
+    height: 100%;
+
+    align-self: end;
+
+}
+
+
+
+.nav-button.top{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.nav-button.bottom{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.nav-button.top, .nav-button.bottom{
+    width: 30%;
+    font-size: 60%;
+    align-self: center;
+    justify-self: start;
+}
+
+.aside_recl{
+    grid-column: 3;
+    grid-row: 1;
+    width: 80%;
+}
+
+
+.aside_border
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+body#gallery{
+    grid-template-columns: 1fr 80% 1fr;
+}
+
+#images_gallery_block{
+
+
+    background-color: rgb(41, 41, 41);
+    display: grid;
+    grid-template-columns: repeat(1fr, 7);
+    grid-template-rows: repeat(1fr, 7);
+
+    width: auto;
+    height: auto;
+
+    justify-self: center;
+    margin: 0px 10%;
+    margin-bottom: 100px;
+
+    grid-auto-flow:dense;
+
+    gap: 10px;
+
+    font-size: 80%;
+
+    border: 5px solid;
+
+    --angle: 0deg;
+	border-image: conic-gradient(from var(--angle), #ce6feb 0%, #39dbe0 25%, #d458c4 50%) 1;
+	animation: 10s rotate linear infinite;
+
+    
+}
+
+
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+#image1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background: rgb(105, 105, 105);
+    display: flex;
+}
+
+#image2{
+    grid-column: 3 / span 5;
+    grid-row: 1 / span 2;
+    background: rgb(105, 105, 105);
+    display: flex;
+}
+
+#image3{
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 3;
+    background: rgb(105, 105, 105);
+    display: flex;
+}
+
+#image4{
+    grid-column: 4 / span 2;
+    grid-row: 3 / span 3;
+    background: rgb(105, 105, 105);
+    display: flex;
+}
+
+#image5{
+    grid-column: 6 / span 2;
+    grid-row: 3 / span 5;
+    background: rgb(105, 105, 105);
+    display: flex;
+}
+
+#image6{
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 2;
+    background: rgb(105, 105, 105);
+    display: flex;
+}
+
+#image7{
+    grid-column: 3 / span 3;
+    grid-row: 6 / span 2;
+    background: rgb(105, 105, 105);
+    display: flex;
+}
+
+
+#image1 > p, #image2 > p, #image3 > p, #image4 > p, #image5 > p, #image6 > p, #image7 > p{
+    align-self: flex-end;
+    justify-self: center;
+    z-index: 2;
+}
+
+#image1 > img, #image2 > img, #image3 > img, #image4 > img, #image5 > img, #image6 > img, #image7 > img{
+    align-self: flex-start;
+    justify-self: center;
+    width: 200px;
+    height: 200px;
+    font-size: x-large;
+    color: rgb(211, 11, 11);
+    z-index: 2;
+}
+
+#image1, #image2, #image3, #image4, #image5, #image6, #image7{
+    position: relative;
+}
+
+#image1::before, #image2::before, #image3::before, #image4::before, #image5::before, #image6::before, #image7::before{
+    content: '';
+    background: linear-gradient(45deg, #ce6feb 0%, #39dbe0 50%, #d458c4 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+
+#image1:hover::before, #image2:hover::before, #image3:hover::before, #image4:hover::before, #image5:hover::before, #image6:hover::before, #image7:hover::before{
+    transition-duration: 2s;
+    opacity: 1;
+}
+
+
+
+
+
+#refresh{
+    grid-column: 2;
+    grid-row: 4;
+    justify-self: center;
+    
+}
+
+#footer_like{
+    grid-column: 4;
+    grid-row: 1;
+    padding-right: 30px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1500px)
+{
+
+    footer{
+        grid-template-columns: repeat(1fr, 2);
+        grid-template-rows: repeat(1fr, 2);
+        
+    }
+
+    #about_us_footer{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #contacts_footer{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #footer_medias
+    {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #footer_owners{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #footer_like{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+
+    
+
+    #all_ex_header{
+        
+        grid-template-rows: [start] 300px 1fr [bottom_text] 100px [end];
+        
+    }
+
+    #horizontal_section_content
+    {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr;
+    }
+
+    #content{
+
+        grid-row: 1;
+        margin-left: 0px;
+    
+    }
+
+    .aside_recl{
+        grid-column: 1;
+        grid-row: 2;
+        margin-bottom: 100px;
+    }
+    
+    .aside_news{
+        grid-column: 1;
+        grid-row: 3;
+        margin-bottom: 50px;
+    }
+
+    .aside_recl, .aside_news{
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    #first_name{
+        grid-column: 2 / 4;
+    }
+
+    #images_gallery_block{
+        
+        grid-template-columns: repeat(1fr, 5);
+        grid-template-rows: repeat(1fr, 11);
+        font-size: 60%;
+    }
+
+    #image1{
+        grid-column: 1 / span 2;
+        grid-row: 8 / span 2;
+        
+    }
+    
+    #image2{
+        grid-column: 1 / span 5;
+        grid-row: 1 / span 2;
+        
+    }
+    
+    #image3{
+        grid-column: 3 / span 3;
+        grid-row: 5 / span 3;
+       
+    }
+    
+    #image4{
+        grid-column: 3 / span 2;
+        grid-row: 8 / span 3;
+        
+    }
+    
+    #image5{
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 5;
+        
+    }
+    
+    #image6{
+        grid-column: 1 / span 2;
+        grid-row: 10 / span 2;
+        
+    }
+    
+    #image7{
+        grid-column: 3 / span 3;
+        grid-row: 3 / span 2;
+        
+    }
+    
+    
+}
+
+@media (orientation: portrait)
+{
+
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, 4);
+        
+    }
+
+    #about_us_footer{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #contacts_footer{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #footer_medias
+    {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    #footer_owners{
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #footer_like{
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+
+
+    
+
+
+
+    #all_ex_header{
+        
+        grid-template-rows: [start] 300px 100px 1fr [bottom_text] 120px [end];
+        
+    }
+
+    #horizontal_section_content
+    {
+        grid-column: 1 / 4;
+        grid-row: 3 / bottom_text;
+    }
+
+    
+    #first_name{
+        grid-column: 1 / 4;
+    }
+
+    
+
+    #content{
+
+        margin-left: 20px;
+    
+    }
+
+    .aside_recl, .aside_news{
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+
+    #images_gallery_block{
+        
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    #image1{
+        grid-column: auto;
+        grid-row: auto;
+       
+    }
+    
+    #image2{
+        grid-column: auto;
+        grid-row: auto;
+        
+    }
+    
+    #image3{
+        grid-column: auto;
+        grid-row: auto;
+        
+    }
+    
+    #image4{
+        grid-column: auto;
+        grid-row: auto;
+        
+    }
+    
+    #image5{
+        grid-column: auto;
+        grid-row: auto;
+        
+    }
+    
+    #image6{
+        grid-column: auto;
+        grid-row: auto;
+        
+    }
+    
+    #image7{
+        grid-column: auto;
+        grid-row: auto;
+        
+    }
+
+}

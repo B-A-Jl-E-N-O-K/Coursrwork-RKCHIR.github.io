@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8"> <!--Кодировка-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Параметры отображения сайта-->
+        <link rel="icon" href="favicon.ico" sizes="any">    <!--Фавиконка-->
+
+        <link rel="stylesheet" href="style.css">    <!--Внешний стиль-->
+        <link rel="stylesheet" href="style_greed.css">    <!--Внешний стиль-->
+
+        <script src="main.js"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+
+        <title>Магазин исторической реконструкции "Боевые железяки"</title> <!--Заголовок в шапке-->
+    </head>
+
+    
+
+    <body class="gallery" onload="whenLoadTovar()">
+
+        <header class="custom_border_bottom">
+
+            <div id="header_ins">
+
+                <img src="source/knight.svg" alt="Logo not loaded" title="logo" id="header_logo"/>
+            
+
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                
+                    <ul class="menu__box" >
+                        <li><a class="menu__item" href="index.html">Главная</a></li>
+                        <li><a class="menu__item" href="catalog.html">Каталог</a></li>
+                        <li><a class="menu__item" href="news.html">Статьи</a></li>
+                        <li><a class="menu__item" href="buy_menu.html"><p>К покупке</p></a></li>
+                        <li><a class="menu__item auth_link" href="auth.html">Авторизация</a></li>
+                    </ul>
+
+                    
+                </div>
+
+
+                <div class="notifications">
+                    <input id="notifications_check" type="checkbox" onclick="whenButtonPres()"/>
+                    <label class="notifications_button" for="notifications_check"><img src="source/bell.svg"/></label>
+                    <div id="notifications_box">
+                        <ul class="notifications_list">
+                            <li class="notifications_item">Приветствуем!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <img src="source/knight_right.svg" class = "mirror right_knight" alt="Logo not loaded" title="logo" id="header_logo"/>
+
+            </div>
+        </header>
+
+        <div id="templer_buy"></div>
+
+        <div id="buy_content">
+
+
+            <div id="first_name">
+                <h1>Оформление заказа</h1> <!--Заголовок в верху страницы (название)-->
+            </div>
+
+            <div id="buy_form">
+
+                <main>  
+                    
+                    <section>
+                        <fieldset class="field_inp_style">
+                            <legend>Содержание заказа</legend>
+
+                            <div id="tovar"><img src="source/question.svg" alt="Tovar img"> <p>Название товара</p></div>
+
+                            
+                        </fieldset>
+
+
+                        <form name="buy_form" id ="buy_form" method="post" action="">
+                            
+                            <fieldset>
+                                <legend>Контактные данные</legend>
+    
+                                <div class="app-form-group">
+                                    <input class="app-form-control" placeholder="Name" required>
+                                </div>
+                                <div class="app-form-group">
+                                    <input class="app-form-control" placeholder="Telephone" required>
+                                </div>
+                                
+                                <div class="app-form-group">
+                                    <input class="app-form-control" placeholder="Email" required>
+                                </div>
+    
+                                
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend>Опции</legend>
+                                <p>
+
+                                    <div id="line_inp">
+                                        <input type="checkbox" name="inp_options" checked> 
+                                        Защитное покрытие
+                                        
+                                    </div>
+                                    <p>И/ИЛИ</p>
+                                    <div id="line_inp">
+                                        <input type="checkbox" name="inp_options">
+                                        Травление символа
+                                        
+                                    </div>
+                                    
+                                   
+                                </p>
+        
+                                <p>
+                                    <p>Как примете заказ?</p>
+                                    <div id="line_inp">
+                                        <input type="radio" name="inp_give">
+                                        Доставка
+                                        
+                                    </div>
+
+                                    <div id="line_inp">
+                                        <input type="radio" name="inp_give" checked>
+                                        Заберу сам
+                                        
+                                    </div>
+ 
+                                </p>
+        
+                                <p>
+                                    <div class="form-group">
+
+                                        <label class="select-group">
+                                          <span class="select-label">Выберите свой город</span>
+                                          <select class="select">
+                                            <option value="moscow" selected>Москва</option>
+                                            <option value="st-petersburg">Санкт-Петербург</option>
+                                            <option value="kazan">Казань</option>
+                                          </select>
+                                        </label>
+                                    </div>
+
+                                </p>
+                                
+                                
+                                <label>
+                                    Ваши особые пожелания: <br/>
+                                    <textarea cols="50" rows="5" maxlength="500" minlength="10" placeholder="Напишите ваше пожелание(от 10 до 500 символов)" required></textarea>
+                                </label><br/>
+        
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend>Подтверждение</legend>
+
+                                <button type="submit" name="submit_buy_form" id="buy_button" class="noselect in_bin">Перейти к оплате</button>
+                                <p>ИЛИ</p>
+                                <button type="reset" name="reset button" form="buy_form" id="buy_button" class="noselect in_bin">Снести введенные данные</button>
+
+                            </fieldset>
+                        
+                            
+                        </form>
+
+                        
+
+                    </section>
+                    
+                </main>
+            </div>
+            
+
+                
+
+            
+
+
+        </div>
+
+        <footer class="footer-distributed">
+
+            <div class="footer-right">
+      
+              <a href="source/youtube.svg"><img src="source/youtube.svg" alt="img not loaded"></a>
+              <a href="source/vk.svg"><img src="source/vk.svg" alt="img not loaded"></a>
+              <a href="source/github.svg"><img src="source/github.svg" alt="img not loaded"></a>
+              <a href="source/internet.svg"><img src="source/internet.svg" alt="img not loaded"></a>
+      
+            </div>
+      
+            <div class="footer-left" >
+      
+              <p class="footer-links">
+                <a class="link-1" href="index.html"  name="Bottom">Домашняя</a>
+      
+                <a href="news.html">Блог</a>
+      
+                <a href="catalog.html">Каталог</a>
+      
+                <a href="contacts.html">Контакты</a>
+              </p>
+      
+              <p>Боевые железяки &copy; 2022</p>
+            </div>
+      
+        </footer>
+
+    </body>
+</html>

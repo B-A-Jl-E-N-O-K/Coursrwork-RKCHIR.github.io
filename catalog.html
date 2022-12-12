@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8"> <!--Кодировка-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Параметры отображения сайта-->
+        <link rel="icon" href="favicon.ico" sizes="any">    <!--Фавиконка-->
+
+        <link rel="stylesheet" href="style.css">    <!--Внешний стиль-->
+        <link rel="stylesheet" href="style_greed.css">    <!--Внешний стиль-->
+
+        <script src="main.js"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+
+        <title>Магазин исторической реконструкции "Боевые железяки"</title> <!--Заголовок в шапке-->
+    </head>
+
+    
+
+    <body class="gallery" onload="cut_text(20)">
+
+        <header class="custom_border_bottom">
+
+            <div id="header_ins">
+
+                <img src="source/knight.svg" alt="Logo not loaded" title="logo" id="header_logo"/>
+            
+
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                
+                    <ul class="menu__box" >
+                        <li><a class="menu__item" href="index.html">Главная</a></li>
+                        <li><a class="menu__item" href="catalog.html">Каталог</a></li>
+                        <li><a class="menu__item" href="news.html">Статьи</a></li>
+                        <li><a class="menu__item" href="buy_menu.html"><p>К покупке</p></a></li>
+                        <li><a class="menu__item auth_link" href="auth.html">Авторизация</a></li>
+                    </ul>
+
+                    
+                </div>
+
+                <div class="notifications_button bin_tovar" ><img src="source/cart.svg"/></div>
+
+                <div class="notifications">
+                    <input id="notifications_check" type="checkbox" onclick="whenButtonPres()"/>
+                    <label class="notifications_button" for="notifications_check"><img src="source/bell.svg"/></label>
+                    <div id="notifications_box">
+                        <ul class="notifications_list">
+                            <li class="notifications_item">Приветствуем!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <img src="source/knight_right.svg" class = "mirror right_knight" alt="Logo not loaded" title="logo" id="header_logo"/>
+
+            </div>
+        </header>
+
+        
+
+        <div id="templer_buy"></div>
+
+
+        <div id="first_name">
+            <h1>Каталог товаров</h1> <!--Заголовок в верху страницы (название)-->
+        </div>
+
+        <div id="catalog_box">
+            <a href="tovar1.html"><div id="tovar_block" class="sword"><h3>Меч полуторный</h3><img src="source/tovar1/polytor.jpg" alt="Not loaded"><p>Утяжеленный меч без украшений</p></div></a>
+            <a href="tovar2.html"><div id="tovar_block" class="sword"><h3>Фламберг полуторный</h3><img src="source/tovar2/flamberg.jpg" alt="Not loaded"><p>Полуторный меч с пламенеющим клинком. Максимальная достоверность</p></div></a>
+            <a href="#"><div id="tovar_block" class="sword"><img src="source/arbalet.svg" alt="Not loaded"><h3>Арбалет</h3><p>Простой арбалет из древесины?</p></div></a>
+            <a href="#"><div id="tovar_block" class="sword"><img src="source/arbalet.svg" alt="Not loaded"><h3>Арбалет</h3><p>Простой арбалет из древесины?</p></div></a>
+            <a href="#"><div id="tovar_block" class="sword"><img src="source/arbalet.svg" alt="Not loaded"><h3>Арбалет</h3><p>Простой арбалет из древесины?</p></div></a>
+            <a href="#"><div id="tovar_block" class="sword"><img src="source/arbalet.svg" alt="Not loaded"><h3>Арбалет</h3><p>Простой арбалет из древесины?</p></div></a>
+            <a href="#"><div id="tovar_block" class="sword"><img src="source/arbalet.svg" alt="Not loaded"><h3>Арбалет</h3><p>Простой арбалет из древесины?</p></div></a>
+            <a href="#"><div id="tovar_block" class="sword"><img src="source/arbalet.svg" alt="Not loaded"><h3>Арбалет</h3><p>Простой арбалет из древесины?</p></div></a>
+        
+        
+        </div>
+            
+
+                
+
+            
+
+
+        
+
+        <footer class="footer-distributed">
+
+            <div class="footer-right">
+      
+              <a href="source/youtube.svg"><img src="source/youtube.svg" alt="img not loaded"></a>
+              <a href="source/vk.svg"><img src="source/vk.svg" alt="img not loaded"></a>
+              <a href="source/github.svg"><img src="source/github.svg" alt="img not loaded"></a>
+              <a href="source/internet.svg"><img src="source/internet.svg" alt="img not loaded"></a>
+      
+            </div>
+      
+            <div class="footer-left" >
+      
+              <p class="footer-links">
+                <a class="link-1" href="index.html"  name="Bottom">Домашняя</a>
+      
+                <a href="news.html">Блог</a>
+      
+                <a href="catalog.html">Каталог</a>
+      
+                <a href="contacts.html">Контакты</a>
+              </p>
+      
+              <p>Боевые железяки &copy; 2022</p>
+            </div>
+      
+        </footer>
+
+    </body>
+</html>

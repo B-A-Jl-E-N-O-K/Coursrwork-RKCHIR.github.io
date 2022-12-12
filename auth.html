@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8"> <!--Кодировка-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Параметры отображения сайта-->
+        <link rel="icon" href="favicon.ico" sizes="any">    <!--Фавиконка-->
+        <link rel="stylesheet" href="style.css">    <!--Внешний стиль-->
+        <link rel="stylesheet" href="style_greed.css">    <!--Внешний стиль-->
+        <script src="main.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+
+        <title>Магазин исторической реконструкции "Боевые железяки"</title> <!--Заголовок в шапке-->
+
+    </head>
+
+    <body class="auth_body">
+
+        
+        <div id="content_auth">
+
+            <form name="buy_form" id ="auth_form" method="post" action="">
+                <p onclick="make_auth()">Вход</p>
+                <div id="auth_inputs">
+                    <input type="text" name="inp_login" pattern="[A-Za-z]{,30}" placeholder="Login" required  class="inp_auth_style auth_login"/>
+                    <input type="email" name="inp_email" placeholder="Email"  class="inp_auth_style auth_email"/>
+                    <input type="tel" name="inp_tel" placeholder="Telephone" class="inp_auth_style auth_tel"/>
+                    <input type="text" name="inp_pass" pattern="[A-Za-z]{,30}" placeholder="Password" required class="inp_auth_style auth_pass"/>
+
+                </div>
+                <div id="auth_buttons">
+                    <button type="submit" name="inp_subm" form="auth_form" id="buy_button"  class="auth_submit" disabled="true">Войти</button>
+                    <input type="button" id="buy_button" onclick="Captcha();" value="Докажи, что не бот!"/>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="capt"> 
+
+            <h3>А вот и ваша капча!</h3>
+
+            <h2 type="text" id="mainCaptcha"></h2>
+                        
+            <input type="text" id="txtInput"/>    
+            <input id="Button1" type="button" value="Check" onclick="alert(ValidCaptcha());"/>
+        </div>
+
+        <div class="auth_blocks block1"></div>
+        <div class="auth_blocks block2"></div>
+        <div class="auth_blocks block3"></div>
+        <div class="auth_blocks block4"></div>
+
+        
+        <div class="blocking"></div>
+        
+    </body>
+</html>

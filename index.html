@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8"> <!--Кодировка-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Параметры отображения сайта-->
+        <link rel="icon" href="favicon.ico" sizes="any">    <!--Фавиконка-->
+        <link rel="stylesheet" href="style.css">    <!--Внешний стиль-->
+        <link rel="stylesheet" href="style_greed.css">    <!--Внешний стиль-->
+        <script src="main.js"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+
+        <title>Магазин исторической реконструкции "Боевые железяки"</title> <!--Заголовок в шапке-->
+    </head>
+
+    <body class="main" onload="makeNotesListener()">
+
+        
+        <header class="custom_border_bottom">
+
+            <div id="header_ins">
+
+                <img src="source/knight.svg" alt="Logo not loaded" title="logo" id="header_logo"/>
+            
+
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                
+                    <ul class="menu__box" >
+                        <li><a class="menu__item" href="index.html">Главная</a></li>
+                        <li><a class="menu__item" href="catalog.html">Каталог</a></li>
+                        <li><a class="menu__item" href="news.html">Статьи</a></li>
+                        <li><a class="menu__item" href="buy_menu.html">К покупке</a></li>
+                        <li><a class="menu__item auth_link" href="auth.html">Авторизация</a></li>
+                    </ul>
+
+                    
+                </div>
+
+
+                <div class="notifications">
+                    <input id="notifications_check" type="checkbox" onclick="whenButtonPres()"/>
+                    <label class="notifications_button" for="notifications_check"><img src="source/bell.svg"/></label>
+                    <div id="notifications_box">
+                        <ul class="notifications_list">
+                            <li class="notifications_item">Приветствуем!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <img src="source/knight_right.svg" class = "mirror right_knight" alt="Logo not loaded" title="logo" id="header_logo"/>
+
+            </div>
+        </header>
+
+        <div id="all_ex_header">
+
+        
+            <a href="#Bottom" class="nav-button top"><img src="source/arrow.svg"/></a><!--Якорь на конец страницы-->
+            <div id="block_buttons"></div>
+            
+            
+            
+            <div id="first_name">
+                <h1>Боевые железяки</h1> <!--Заголовок в верху страницы (название)-->
+                <h3>Магазин исторической реконструкции</h3>
+            </div>
+
+            
+
+            <div id ="horizontal_section_content">
+
+                <div id="content">
+
+                    <article>
+                        <h4>Вдохновляющая цитата</h4>
+            
+                        <blockquote> <!--Цитата для стиля-->
+                            <i>
+                                <div id="intro_citat">
+                                    <pre>
+А все-таки было бы хорошо,
+Чтоб в людях жила отвага,
+Чтоб каждый по городу гордо шел
+И сбоку сверкала шпага!
+                                    </pre>
+                                </div>
+                            </i>
+                        </blockquote>
+                        <cite>Игорь Кобзев - "Шпага чести"</cite> <!--Подпись к цитате-->
+                    </article>
+                    
+                    <h3>Добро пожаловать на сайт Боевые железяки!</h3>
+                    <p>
+                        На нашем сайте вы можете найти различные реплики средневекового оружия, снаряжения, инструментов, расходников и т.д
+                        Вы находитесь на главной, приветственной странице сайта. Отсюда вы можете попасть в различные разделы, 
+                        например, оценить товары в каталоге, почитать статьи по тематике в блоге, авторизоваться или приобрести заинтересовавшие товары
+                    </p>
+                    <p>
+                        Мы продаем как выставочные экземпляры, так и полноценные тренировочные, 
+                        соревновательные и максимально реалистичные реплики холодного оружия самых различных времен и культур
+                    </p>
+                    <p>Однако в соответсвии с законами, вы не можете приобрести заточенное оружие. А мы не можем его произвести. Да и зачем нам заточенное? Поэтому:</p>
+                    <b>Помните:</b> реплики холодного оружия не имеют заточки, поэтому они не являются холодным оружием<br/>
+                    <strong>Никогда не затачивайте реплики самостоятельно! Это карается <a href="https://fssp.gov.ru/federalnyjj_zakon_150fz_ob_oruzhii/">законом.</a></strong>
+
+                    <p>
+                        Рыцари вошли в историю и культуру человечества как образец настоящего героя, символ отваги и воинского мастерства. Едва ли на свете найдется мужчина, который ни разу в жизни не мечтал стать настоящим рыцарем: в сияющей броне, на коне, с верным мечом в руках.
+                    </p>
+                    <p>
+                        Сквозь толщу веков магазин "Боевые железяки" предлагает Вам возможность купить настоящий средневековый меч. Кованый меч - не бутафорская декорация, продающаяся в сувенирных лавках и годная лишь "на стенку". Мы занимаемся продажей настоящих рыцарских мечей по низким ценам, выкованных руками кузнецов в строгом соответствии со средневековыми технологиями. Высокоуглеродистая легированная сталь, закалка, отсутствие любых ослаблений конструкции - именно такой меч придётся по нраву как серьёзному коллекционеру, так и любителю контактного фехтования.
+                    </p>
+                    <p>
+                        Также для тех, кто всерьёз увлекается контактным фехтованием или собирается приобщиться к этому безумно интересному виду спорта, в продаже имеются тренировочные, спортивные и турнирные мечи по выгодным ценам.
+                    </p>
+                    <p>
+                        Если вы задались вопросом где купить настоящий меч или какова цена на меч? Вам надо лишь оформить заказ на нашем сайте. Продажа мечей осуществляется в полном сооответствии с законами Российской Федерации.
+                    </p>
+
+                    <h4>О нас</h4>
+                    <p>Сайт разработан в соответствии с заданием на курсовую работу курса РКЧИР РТУ МИРЭА. Разрабоьан и оформлен любителем исторической боевой тематики с применением знаний курса РКЧИР</p>
+                    
+                    <h4>О тематике</h4>
+                    <p>Сайт охватывает тематику оружия и боевого снаряжения от древних времен до нового времени. Речь идет о репликах холодного оружия и вполне настоящем снаряжении.</p>
+                </div>    
+                  
+                <aside class="aside_border"></aside>
+
+                
+                <aside class="aside_recl">
+
+                    <div class="aside_border_horizontal"></div>
+
+                    <h4>Лучший товар по мнению редакции</h4>
+                    <div id="top_tovar">
+                        <a href="tovar1.html"><div id="tovar_block" class="sword best_tovar"><img src="source/arbalet.svg" alt="Not loaded"><h3>Фламберг полуторный</h3><p>Полуторный меч с пламенеющим клинком</p></div></a>
+                    </div>
+
+                    <div class="aside_border_horizontal"></div>
+
+                    <h4>Статья дня</h4>
+                    
+                    <a href="news.html">
+                        <div id="curr_article">
+                            <img src="source/sable.jpg" alt="Img not loaded"/>
+                            <p>Сабля: оружие, покорившее мир.</p>
+                        </div>
+                    </a>
+                    
+
+                    <div class="aside_border_horizontal"></div>
+
+                </aside>
+
+                
+            </div>
+        
+            
+            <a href="#Top" class="nav-button bottom"><img src="source/arrow.svg"/></a><!--Якорь на начало страницы-->
+
+        </div>
+
+        <footer class="footer-distributed">
+
+            <div class="footer-right">
+      
+              <a href="source/youtube.svg"><img src="source/youtube.svg" alt="img not loaded"></a>
+              <a href="source/vk.svg"><img src="source/vk.svg" alt="img not loaded"></a>
+              <a href="source/github.svg"><img src="source/github.svg" alt="img not loaded"></a>
+              <a href="source/internet.svg"><img src="source/internet.svg" alt="img not loaded"></a>
+      
+            </div>
+      
+            <div class="footer-left" >
+      
+              <p class="footer-links">
+                <a class="link-1" href="index.html"  name="Bottom">Домашняя</a>
+      
+                <a href="news.html">Блог</a>
+      
+                <a href="catalog.html">Каталог</a>
+      
+                <a href="contacts.html">Контакты</a>
+              </p>
+      
+              <p>Боевые железяки &copy; 2022</p>
+            </div>
+      
+        </footer>
+    </body>
+</html>

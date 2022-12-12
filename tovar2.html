@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8"> <!--Кодировка-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Параметры отображения сайта-->
+        <link rel="icon" href="favicon.ico" sizes="any">    <!--Фавиконка-->
+
+        <link rel="stylesheet" href="style.css">    <!--Внешний стиль-->
+        <link rel="stylesheet" href="style_greed.css">    <!--Внешний стиль-->
+
+        <script src="main.js"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+
+        <title>Магазин исторической реконструкции "Боевые железяки"</title> <!--Заголовок в шапке-->
+    </head>
+
+    
+
+    <body class="gallery">
+
+        <header class="custom_border_bottom">
+
+            <div id="header_ins">
+
+                <img src="source/knight.svg" alt="Logo not loaded" title="logo" id="header_logo"/>
+            
+
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                
+                    <ul class="menu__box" >
+                        <li><a class="menu__item" href="index.html">Главная</a></li>
+                        <li><a class="menu__item" href="catalog.html">Каталог</a></li>
+                        <li><a class="menu__item" href="news.html">Статьи</a></li>
+                        <li><a class="menu__item" href="buy_menu.html"><p>К покупке</p></a></li>
+                        <li><a class="menu__item auth_link" href="auth.html">Авторизация</a></li>
+                    </ul>
+
+                    
+                </div>
+
+
+                <div class="notifications">
+                    <input id="notifications_check" type="checkbox" onclick="whenButtonPres()"/>
+                    <label class="notifications_button" for="notifications_check"><img src="source/bell.svg"/></label>
+                    <div id="notifications_box">
+                        <ul class="notifications_list">
+                            <li class="notifications_item">Приветствуем!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <img src="source/knight_right.svg" class = "mirror right_knight" alt="Logo not loaded" title="logo" id="header_logo"/>
+
+            </div>
+        </header>
+
+        <div id="templer_buy"></div>
+
+
+        <div id="first_name">
+
+            <div class="arrow-6" onclick="history.back(-1); return false;" value="Назад">
+                <svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)">
+                        <polygon class="arrow-6-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                        <polygon class="arrow-6-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                        <path d="M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                    </g>
+                </svg>
+            </div>
+
+            <h1>Меч полуторный фламберг</h1> <!--Заголовок в верху страницы (название)-->
+        </div>
+
+        <div id="tovar_box">
+
+            <div id="horizontal_block_tovar">
+                
+
+                <div id="tovar_imgs">
+
+                    <p><img id="largeImg" src="source/tovar2/flamberg.jpg" alt="Large image"></p>
+    
+                    <ul id="imgs">
+                        
+                        <li>
+                            <img src="source/tovar2/flamberg.jpg" id="small_item" title="Image 1">
+                        </li>
+                        <li>
+                            <img src="source/tovar2/flamberg2.jpg" id="small_item" title="Image 2">
+                        </li>
+                        <li>
+                            <img src="source/tovar2/flamberg3.jpg" id="small_item" title="Image 3">
+                        </li>
+                        <li>
+                            <img src="source/tovar2/flamberg4.jpg" id="small_item" title="Image 4">
+                        </li>
+                        <li>
+                            <img src="source/sword.svg" id="small_item"title="Image 5">
+                        </li>
+                    </ul>
+    
+                </div>
+    
+                <div id="tovar_text">
+                    <h3>Меч полуторный фламберг</h3>
+                    <p>
+                        Полуторный меч, предназначенный как для одноручного, так и для двуручного хвата. Прекрасное наступательное оружие эпохи Позднего средневековья.
+                        Мечи с "пламенеющим лезвием" (фламберги) получили свое название из-за характерной формы клинка, напоминающей пляшущее пламя. Сложные в изготовлении и дорогие, они тем не менее весьма ценились за превосходную прорубающую способность и возможность наносить ужасные повреждения. Раны, нанесенные фламбергом, имели рваные края и плохо заживали, вследствие чего часто приводили к заражению и гибели раненого. Из-за этих жестоких свойств фламберги попадали по Папский эдикт о запрещенном оружии, а солдат, вооруженных подобным мечом, на поле боя в плен брали крайне неохотно, предпочитая казнить на месте.
+                        Данный полуторный подвид фламберга чрезвычайно удобен за счет сравнительно небольшого веса, и хорош в контактном бою, сочетая в себе возможности одноручного и двуручного оружия.
+                    </p>
+
+                    <div id="buy_button" class="noselect">Положить в корзину</div>
+                </div>
+
+            </div>
+
+            
+            <div id="tovar_charact">
+
+                <p>
+
+                    <p>Примерные параметры:</p>
+                    <ul id="tovar_char_list">
+                        <li>Длина клинка: 90 см</li>
+                    
+                        <li>Общая длина меча:115 см</li>
+                        
+                        <li>Ширина гарды: 20 см</li>
+                        
+                        <li>Ширина клинка у гарды: 4,5 см</li>
+                        
+                        <li>Толщина клинка у гарды: 5 мм</li>
+                        
+                        <li>Вес меча: 1,7 кг</li>
+                        
+                        <li>Меч выкован из стали 65Г, закален на 50-55 HRC. Клинок полированный. Рукоять оплетена кожей.</li>
+
+                    </ul>
+                    
+                    
+
+                </p>
+
+            </div>
+            
+
+        </div>
+            
+        
+        
+       
+            
+
+                
+
+            
+
+
+        
+
+        <footer class="footer-distributed">
+
+            <div class="footer-right">
+      
+              <a href="source/youtube.svg"><img src="source/youtube.svg" alt="img not loaded"></a>
+              <a href="source/vk.svg"><img src="source/vk.svg" alt="img not loaded"></a>
+              <a href="source/github.svg"><img src="source/github.svg" alt="img not loaded"></a>
+              <a href="source/internet.svg"><img src="source/internet.svg" alt="img not loaded"></a>
+      
+            </div>
+      
+            <div class="footer-left" >
+      
+              <p class="footer-links">
+                <a class="link-1" href="index.html"  name="Bottom">Домашняя</a>
+      
+                <a href="news.html">Блог</a>
+      
+                <a href="catalog.html">Каталог</a>
+      
+                <a href="contacts.html">Контакты</a>
+              </p>
+      
+              <p>Боевые железяки &copy; 2022</p>
+            </div>
+      
+        </footer>
+
+    </body>
+</html>
