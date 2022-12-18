@@ -2069,6 +2069,7 @@ body.contacts{
 
     #content_auth{
         width:80%;
+        height: auto;
         transition-duration: 1s;
     }
 
@@ -2133,9 +2134,9 @@ body.contacts{
 
     .capt{
         
-
+        left: 10%;
         width: 80%;
-        height: 70%;
+        height: auto;
     }
 
     #first_name{
