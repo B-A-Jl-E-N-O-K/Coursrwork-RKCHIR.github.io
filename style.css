@@ -56,10 +56,6 @@ header{
     
     text-align: center;
 
-    
-
-    padding: 5px 10px;
-    padding-right: 45px;
     background-color:#292c2f;
    
 }
@@ -79,7 +75,7 @@ header{
     height: 90%;
     width: auto;
     align-self: flex-end;
-    z-index: 6;
+    z-index: 4;
 }
 
 
@@ -641,7 +637,7 @@ li img{
     height: 70px;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 2;
+    z-index: 5;
     background: linear-gradient(45deg, #c90000 0%, #d1d1d1 100%);
     background-size: contain;
 }
@@ -657,7 +653,7 @@ li img{
     display: flex;
     align-items: center;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     
     
 }
@@ -680,6 +676,7 @@ li img{
     transition-duration: 10s;
     
 }
+
 
 #notifications_check:not(:checked) ~ #notifications_box {
     
@@ -1046,7 +1043,6 @@ li img{
 #auth_buttons{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
 }
@@ -1410,6 +1406,10 @@ li img{
     margin-top:100px;
 }
 
+#buy_content{
+    padding-top: 10%;
+}
+
 #buy_form{
     display:flex;
     flex-direction: row;
@@ -1698,6 +1698,13 @@ li img{
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 50px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+body.gallery #first_name{
+    width: 80%;
 }
 
 #tovar_text h3{
@@ -1857,6 +1864,7 @@ li img{
 
 #article img{
     align-self: center;
+    
 }
 
 #news_body #first_name{
@@ -1974,6 +1982,12 @@ li img{
   .app-form-button:hover {
     color: #ec1c1c;
   }
+
+body.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
   
   
   
@@ -2082,9 +2096,6 @@ li img{
         margin-right: 10%;
     }
 
-    #content{
-        width: 80%;
-    }
 
     header{
         display: flex;
@@ -2096,114 +2107,10 @@ li img{
         visibility:visible;
     }
 
-
-    .menu__btn{
-        visibility: visible;
-    }
-
-    #menu__toggle {
-        opacity: 0;
-    }
     
-    #menu__toggle:checked ~ .menu__btn > span {
-        transform: rotate(45deg);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::before {
-        top: 0;
-        transform: rotate(0);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::after {
-        top: 0;
-        transform: rotate(90deg);
-    }
-    #menu__toggle:checked ~ .menu__box {
-        visibility: visible;
-        left: 0;
-    }
-    
-    .menu__btn {
-        display: flex;
-        align-items: center;
 
 
-        width: 50px;
-        height: 50px;
-        
-        cursor: pointer;
-        z-index: 1;
-        justify-self: flex-end;
-        align-self: center;
-    }
     
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
-        display: block;
-        position: absolute;
-        
-        width: 50px;
-        height: 5px;
-        
-        background-color: #d3d3d3;
-        
-        transition-duration: .25s;
-    }
-    .menu__btn > span::before {
-        content: '';
-        top: -15px;
-    }
-    .menu__btn > span::after {
-        content: '';
-        top: 15px;
-    }
-    
-    .menu__box {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        visibility: hidden;
-        justify-content: start;
-        
-        top: 0;
-        left: -100%;
-        
-        width: 100%;
-        height: 100%;
-        
-        margin: 0;
-        padding: 80px 0;
-        padding-top: 20%;
-        
-        list-style: none;
-        
-        background-color: #3a3a3a;
-        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-        
-        transition-duration: .25s;
-    }
-
-    
-        
-    .menu__item {
-        display: block;
-        padding: 12px 24px;
-        padding-bottom: 50px;
-        
-        
-        
-        color: #333;
-        
-        font-family: 'Roboto', sans-serif;
-        font-size: 150%;
-        font-weight: 600;
-        
-        text-decoration: none;
-        
-        transition-duration: .25s;
-    }
-    .menu__item:hover {
-        background-color: #3a3a3a;
-    }
 
     #content_auth .nav-button{
         visibility: visible;
@@ -2212,19 +2119,9 @@ li img{
 
 
 
-    .notifications_button{
-        
-        top: 5%;
-        left: 55%;
-      
+    
 
-    }
-
-    .bin_tovar{
-       
-        height:80px;
-        width: 80px;
-    }
+    
 
     .inp_auth_style{
         width: 90%;

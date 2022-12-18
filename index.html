@@ -6,6 +6,7 @@
         <link rel="icon" href="favicon.ico" sizes="any">    <!--Фавиконка-->
         <link rel="stylesheet" href="style.css">    <!--Внешний стиль-->
         <link rel="stylesheet" href="style_greed.css">    <!--Внешний стиль-->
+        <link rel="stylesheet" href="structure_style.css">    <!--Внешний стиль-->
         <script src="main.js"></script>
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +27,7 @@
             
 
                 <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
+                    <input id="menu__toggle" type="checkbox" onclick="menuOpen()" />
                     <label class="menu__btn" for="menu__toggle">
                         <span></span>
                     </label>
@@ -44,7 +45,7 @@
 
 
                 <div class="notifications">
-                    <input id="notifications_check" type="checkbox" onclick="whenButtonPres()"/>
+                    <input id="notifications_check" type="checkbox" />
                     <label class="notifications_button" for="notifications_check"><img src="source/bell.svg"/></label>
                     <div id="notifications_box">
                         <ul class="notifications_list">
@@ -57,6 +58,7 @@
 
             </div>
         </header>
+
 
         <div id="all_ex_header">
 

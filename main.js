@@ -303,8 +303,57 @@ document.addEventListener('DOMContentLoaded', function() {
         largeImg.alt = title;
     }
 
+    
+
 
 }, false);
+
+let count_click_menu = 0;
+function menuOpen()
+{
+    count_click_menu += 1;
+    let note = document.querySelector('.notifications');
+    let noteBox = document.querySelector('#notifications_box');
+    let notes = document.querySelectorAll('.notifications_item');
+    
+    if(count_click_menu % 2 == 1)
+    {
+        
+        note.style.visibility = 'hidden';
+        noteBox.style.visibility = 'hidden';
+        noteBox.style.transitionDuration = 0 + 's'
+        for(let curr of notes)
+        {
+            curr.style.visibility = 'hidden';
+        }
+    }
+    else{
+        note.style.visibility = 'visible';
+        noteBox.style.visibility = 'visible';
+        noteBox.style.transitionDuration = 2 + 's';
+        for(let curr of notes)
+        {
+            curr.style.visibility = 'visible';
+        }
+    }
+}
+
+function menuOpenBuy()
+{
+    count_click_menu += 1;
+    let note = document.querySelector('.bin_tovar');
+    
+    
+    if(count_click_menu % 2 == 1)
+    {
+        
+        note.style.visibility = 'hidden';
+        
+    }
+    else{
+        note.style.visibility = 'visible';
+    }
+}
 
 
 
